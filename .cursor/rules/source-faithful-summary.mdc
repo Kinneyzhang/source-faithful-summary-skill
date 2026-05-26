@@ -1,0 +1,36 @@
+---
+description: Source-faithful summary rules for text, video transcripts, audio transcripts, interviews, lectures, demos, and meetings.
+globs: ["**/*.md", "**/*.txt"]
+alwaysApply: false
+---
+
+# Source-Faithful Summary
+
+When summarizing source material, first preserve the source before adding analysis.
+
+Required intermediate artifacts:
+
+1. Source type classification.
+2. Source map with timestamps or section references.
+3. Named concepts and role classification.
+4. Failure modes/tensions/default workflow rejected.
+5. Action chain or argument chain.
+6. Decision-model map.
+7. Main-thread and reverse-summary audits.
+
+Optimize for:
+
+```text
+source fidelity > elegance
+attention weight > concept density
+evidence > vibes
+decision model > isolated tips
+```
+
+For practical/workflow sources, extract:
+
+```text
+failure mode → underlying constraint → judgment → concrete action → tradeoff/limit
+```
+
+Do not turn a practical source into a polished concept essay unless explicitly asked.

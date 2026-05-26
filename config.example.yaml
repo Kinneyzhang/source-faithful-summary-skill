@@ -1,0 +1,21 @@
+# Optional configuration for agents or wrappers using this skill.
+
+source:
+  # text | video_transcript | audio_transcript | interview | lecture | meeting | demo
+  type: video_transcript
+  language: en
+  preserve_timestamps: true
+
+summary:
+  output_language: en
+  include_source_map: true
+  include_decision_model_map: true
+  include_practical_checklist: true
+  separate_analysis_from_summary: true
+
+audit:
+  main_thread_audit: true
+  missing_practical_details_audit: true
+  concept_overreach_audit: true
+  decision_model_audit: true
+  reverse_summary_audit: true
