@@ -31,7 +31,7 @@ Score each dimension from 0 to 5.
    - Does it explain why major actions/claims follow from constraints, tradeoffs, or failure modes?
 
 6. **Boundary and uncertainty handling**
-   - Does it preserve caveats, undecided items, speaker roles, and source quality limits?
+   - Does it preserve caveats, undecided items, speaker/author/participant roles, and source quality limits?
 
 ## Deductions
 
@@ -56,6 +56,13 @@ Apply deductions after the 30-point score:
 
 - Are thesis, arguments, evidence, counterpoints, and caveats preserved?
 - Are rhetorical flourishes kept subordinate to the main argument?
+- If source text was extracted from a webpage/PDF, are missing figures/tables/code/links noted?
+
+### Technical guidance article / practical engineering article
+
+- Is the article's problem/constraint preserved?
+- Are taxonomy/options and selection criteria kept in source order?
+- Are implementation caveats and examples preserved, not collapsed into a generic best-practice list?
 
 ### Video transcript / lecture / demo
 
@@ -66,6 +73,9 @@ Apply deductions after the 30-point score:
 
 - Are speaker roles, recurring themes, stories, and disagreements preserved?
 - Are host questions not confused with guest conclusions?
+- For long podcasts, is there a chapter-level map plus evidence-level anchors?
+- Are forecasts and uncertainties labeled as such?
+- Is any one speaker overrepresented relative to the source?
 
 ### Interview
 
@@ -76,3 +86,15 @@ Apply deductions after the 30-point score:
 
 - Are decisions, action items, owners, deadlines, risks, blockers, and unresolved questions separated?
 - Are suggestions not mislabeled as decisions?
+
+
+## Optional long-source modifiers
+
+For sources >50k characters, >60 minutes, or multi-speaker/panel material, also record:
+
+- **Coverage transparency**: full read / chunking / sampling strategy stated.
+- **Beginning-middle-end coverage**: opening frame, mid-source development, and closing synthesis represented.
+- **Recurrence checks**: repeated controlling concepts searched or tracked.
+- **Speaker coverage**: host/guest/participant roles and disagreements preserved.
+
+These are not separate mandatory points in the 30-point score, but missing them should reduce Attention-weight match, Boundary handling, or Decision-model fidelity.

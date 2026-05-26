@@ -26,8 +26,8 @@ Core rule:
 Faithfulness to the source > elegance of argument
 Narrative weight > concept density
 Concrete action/problem chain > abstract framework
-Timestamps/evidence > vibes
-Speaker's decision model > isolated tips
+Timestamps / section refs / evidence > vibes
+Speaker/author/participant decision model > isolated tips
 ```
 
 ## What This Skill Optimizes
@@ -36,11 +36,11 @@ A good source-grounded summary is not merely compressed source text. It should r
 
 Optimize for five kinds of fidelity:
 
-1. **Main-thread fidelity** — what the speaker is actually driving toward.
-2. **Attention fidelity** — what the speaker spends time on, repeats, or uses to explain later actions.
-3. **Causal fidelity** — why one observation leads to the next decision.
-4. **Action fidelity** — what the speaker actually does, in usable sequence.
-5. **Decision-model fidelity** — the constraints, tradeoffs, and failure modes behind the speaker's workflow.
+1. **Main-thread fidelity** — what the source is actually driving toward.
+2. **Attention fidelity** — what the source spends time on, repeats, or uses to explain later actions/claims.
+3. **Causal fidelity** — why one observation leads to the next decision, claim, or forecast.
+4. **Action/argument fidelity** — what the speaker/author/participants actually do or argue, in source order.
+5. **Decision-model fidelity** — the constraints, tradeoffs, failure modes, and uncertainty behind the source's recommendations or judgments.
 
 For workflow/practice sources, named concepts must not be treated as decorative keywords. A concept is important if it controls later decisions.
 
@@ -110,6 +110,13 @@ Validation checklist:
 
 If transcript fetch fails, retry with another language or source when possible. Do not hallucinate details from the title alone.
 
+For extracted webpages/articles, run a source-quality check:
+
+- Were headings preserved?
+- Were figures, diagrams, tables, footnotes, code blocks, or links lost?
+- Is the text extracted from the full article or a preview/summary?
+- Does the final summary need to say “based on text extraction; figures/tables may be missing”?
+
 ### Step 2 — Classify the source type
 
 Do not write the summary yet. First classify the material:
@@ -122,18 +129,32 @@ Do not write the summary yet. First classify the material:
 5. Product/update talk: core is features, changes, migration impact.
 6. Research/lecture: core is definitions, evidence, method, conclusion.
 7. Debate/panel: core is positions, disagreements, and evidence.
+8. Technical guidance article / practical engineering article: core is problem/constraint → design choice → pattern taxonomy → selection criteria → caveats.
+9. Long audio/podcast: core is speaker roles → chapter map → recurring themes → disagreements/uncertainties → evidence-backed synthesis.
 ```
 
 Write one line before drafting:
 
 ```text
-Source type: <type>; primary summary spine should be <argument chain / action chain / step chain / Q&A chain / feature-impact chain / disagreement map>.
+Source type: <type>; primary summary spine should be <argument chain / action chain / step chain / Q&A chain / feature-impact chain / disagreement map / constraint→judgment map>.
 ```
 
 If the material is practical/workflow, the default spine must be:
 
 ```text
 problem → failure mode → speaker's action → tool/prompt/process → result/lesson
+```
+
+If the material is a technical guidance article, the default spine should be:
+
+```text
+problem/constraint → design choice → pattern taxonomy → selection criteria → caveats → implementation notes
+```
+
+If the material is a long audio/podcast or panel, the default spine should be:
+
+```text
+speaker roles → chapter/topic map → claims by participant → disagreement/uncertainty map → evidence-backed synthesis
 ```
 
 ### Step 3 — Build a source map
@@ -159,6 +180,38 @@ Minimum shape:
 ```
 
 Do not collapse practical details into abstract concepts during this step.
+
+For text/articles, use section headings, paragraph ranges, or stable anchors instead of timestamps. For long audio/video, use a two-level source map:
+
+1. **Chapter-level map** — every major topic/section in source order.
+2. **Evidence-level map** — timestamped or section-specific anchors for claims used in the final summary.
+
+For long sources, explicitly state what was fully read, chunked, sampled, or searched.
+
+### Step 3.5 — Activate long-source protocol when needed
+
+Use this protocol when any source exceeds roughly 50k characters, 60 minutes, 20 source-map nodes, or has multiple speakers and strong topic shifts.
+
+Before summarizing, write a compact **long-source plan**:
+
+```markdown
+## Long-source plan
+
+- Source size: <duration / chars / sections / speakers>
+- Coverage strategy: <full read / chunking / chapter map / keyword recurrence checks>
+- Required coverage: beginning, early thesis, middle development, late synthesis, ending summary
+- Evidence budget: <which claims require timestamps/section refs>
+- Known omissions: <Q&A, side stories, low-value chatter, ads, repeated setup>
+```
+
+Coverage rules:
+
+- Cover the opening framing, at least one mid-source development section, and the final synthesis.
+- For sources with chapters, include every chapter in the chapter-level map even if the final prose compresses some chapters.
+- For repeated named concepts, build a **recurrence index**: first appearance, major reappearances, and final use.
+- For demos/workshops, capture screen/action artifacts separately: commands, files, tools, agent actions, feedback loops, tests, and human decisions.
+- For podcasts/panels, capture speaker roles and disagreements before writing synthesis.
+- State sampling/chunking limitations in the audit if the source was not fully processed.
 
 ### Step 4 — Extract named concepts and source roles
 
@@ -274,6 +327,31 @@ For interviews:
 ## What is claimed vs inferred
 ```
 
+For long podcasts/panels:
+
+```markdown
+## One-sentence faithful summary
+## 1. Who is speaking and what role each person plays
+## 2. Chapter/topic map in source order
+## 3. Major claims by participant
+## 4. Disagreements, uncertainty, and forecast boundaries
+## 5. Recurring technical/business concepts
+## 6. What the source does and does not conclude
+## Evidence notes / chapter references
+```
+
+For technical guidance articles:
+
+```markdown
+## One-sentence faithful summary
+## 1. Problem or constraint the article reacts to
+## 2. Core distinction or taxonomy
+## 3. Pattern/options in source order
+## 4. Selection criteria and caveats
+## 5. Implementation notes and examples
+## Source quality notes
+```
+
 ### Step 8 — Write the summary
 
 Writing constraints:
@@ -334,6 +412,25 @@ Check:
 - Did the summary replace speaker actions with general principles?
 - Did we add our own framework without marking it?
 - Did implications crowd out source content?
+
+#### E. Long-source coverage audit
+
+For long sources, verify:
+
+- Did the source map cover beginning, middle, and ending?
+- Were all major chapters/topics represented, even if compressed?
+- Were repeated controlling concepts checked for recurrence?
+- Is the sampling/chunking strategy disclosed?
+- Would a reader understand the actual scope of the original source?
+
+#### F. Speaker/participant audit
+
+For podcasts, panels, interviews, and meetings, verify:
+
+- Are host questions separated from guest/participant conclusions?
+- Are speaker roles and disagreements preserved?
+- Is one participant overrepresented simply because their claims are easier to summarize?
+- Are uncertain forecasts labeled as forecasts, not facts?
 
 #### D. Decision-model audit
 
@@ -433,8 +530,10 @@ Source:
 Before finalizing:
 
 - [ ] Source/transcript fetched or limitation stated.
+- [ ] Source-quality limitations checked: missing figures/tables/code/links, subtitle/STT quality, preview vs full source.
 - [ ] Source type classified.
 - [ ] Source map exists.
+- [ ] Long-source plan exists when source exceeds ~50k chars / 60 minutes / 20 source-map nodes.
 - [ ] Named concepts are listed and role-classified.
 - [ ] Main thread is stated in one sentence.
 - [ ] Practical/workflow material includes the concrete action/failure chain.
@@ -443,5 +542,7 @@ Before finalizing:
 - [ ] Public/private implications are separated.
 - [ ] Missing-practical-details audit passed.
 - [ ] Decision-model audit passed.
+- [ ] Long-source coverage audit passed when applicable.
+- [ ] Speaker/participant audit passed when applicable.
 - [ ] Reverse summary matches source main thread.
 - [ ] If published, the final page or file was fetched back and checked.

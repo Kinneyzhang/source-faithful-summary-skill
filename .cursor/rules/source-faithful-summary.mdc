@@ -34,3 +34,7 @@ failure mode → underlying constraint → judgment → concrete action → trad
 ```
 
 Do not turn a practical source into a polished concept essay unless explicitly asked.
+
+## Long sources
+
+For sources longer than ~50k characters, longer than ~60 minutes, or multi-speaker/panel transcripts, use `templates/long-source-plan.md` before summarizing. State chunking/sampling strategy, chapter coverage, recurrence checks, speaker coverage, and evidence budget.

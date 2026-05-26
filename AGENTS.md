@@ -50,3 +50,7 @@ failure mode → underlying constraint → speaker/author judgment → concrete 
 - Read `SKILL.md` for the canonical workflow.
 - Use `templates/source-map.md` to structure extraction.
 - Use `templates/summary-outline.md` for final prose.
+
+## Long sources
+
+For sources longer than ~50k characters, longer than ~60 minutes, or multi-speaker/panel transcripts, use `templates/long-source-plan.md` before summarizing. State chunking/sampling strategy, chapter coverage, recurrence checks, speaker coverage, and evidence budget.

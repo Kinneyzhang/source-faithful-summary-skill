@@ -35,6 +35,7 @@
 - `templates/source-map.md`：source map 和 decision model worksheet。
 - `templates/summary-outline.md`：忠实总结大纲模板。
 - `templates/evaluation-rubric.md`：多场景评估评分标准。
+- `templates/long-source-plan.md`：长 transcript、长播客、panel 和长文章的处理计划模板。
 - `examples/workflow-talk-mini.md`：工作流/视频风格小型示例。
 - `examples/text-article-mini.md`：文本文章示例。
 - `examples/audio-podcast-mini.md`：多说话人音频/播客 transcript 示例。
@@ -125,6 +126,10 @@ Do not turn the source into a polished concept essay.
 - 一上来就综合很多来源的研究文章。
 
 如果要写分析和启发，先完成忠实总结，再单独加“分析/启发/我的看法”一节。
+
+## 长材料支持
+
+对于超过约 50k 字符或 60 分钟的材料，写正文前先使用 `templates/long-source-plan.md`。它要求 Agent 明确分块/抽样策略、章节覆盖、概念复现检查、说话人覆盖和证据预算。长播客、panel、长 workshop，以及可能丢图表/表格的网页抽取文本尤其需要这一步。
 
 ## 限制
 

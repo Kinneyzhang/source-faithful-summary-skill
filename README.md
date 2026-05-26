@@ -35,6 +35,7 @@ This package does not do speech-to-text by itself. Use your own transcript tool 
 - `templates/source-map.md` — worksheet for source maps and decision-model extraction.
 - `templates/summary-outline.md` — reusable outline for source-faithful summaries.
 - `templates/evaluation-rubric.md` — scoring rubric for multi-scenario evaluation.
+- `templates/long-source-plan.md` — worksheet for long transcripts, podcasts, panels, and long articles.
 - `examples/workflow-talk-mini.md` — small workflow/video-style example.
 - `examples/text-article-mini.md` — text article example.
 - `examples/audio-podcast-mini.md` — multi-speaker audio/podcast transcript example.
@@ -126,6 +127,10 @@ Do not use this as the primary workflow for:
 - marketing copy;
 - summaries where source fidelity is not important;
 - broad research articles that intentionally synthesize many sources before preserving any one source.
+
+## Long-source support
+
+For sources longer than ~50k characters or ~60 minutes, use `templates/long-source-plan.md` before writing prose. It makes the agent state its chunking/sampling strategy, chapter coverage, recurrence checks, speaker coverage, and evidence budget. This is especially important for podcasts, panels, long workshops, and extracted webpages where figures or tables may be missing.
 
 ## Limitations
 

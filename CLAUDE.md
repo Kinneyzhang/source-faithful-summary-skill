@@ -29,3 +29,7 @@ Do not optimize for elegance before preserving:
 ## If asked to rewrite a summary
 
 Do not anchor on the old summary. Re-open the original source or transcript, rebuild the source map, and regenerate from the extracted structure.
+
+## Long sources
+
+For sources longer than ~50k characters, longer than ~60 minutes, or multi-speaker/panel transcripts, use `templates/long-source-plan.md` before summarizing. State chunking/sampling strategy, chapter coverage, recurrence checks, speaker coverage, and evidence budget.
