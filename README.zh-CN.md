@@ -41,10 +41,10 @@
 - `templates/summary-outline.md`：贴近原文的总结大纲模板。
 - `templates/evaluation-rubric.md`：多场景评估评分标准。
 - `templates/long-source-plan.md`：长 transcript、长播客、panel 和长文章的处理计划模板。
-- `examples/workflow-talk-mini.md`：工作流/视频风格小型示例。
-- `examples/text-article-mini.md`：文本文章示例。
-- `examples/audio-podcast-mini.md`：多说话人音频/播客 transcript 示例。
-- `examples/meeting-mini.md`：会议 transcript 示例。
+- `examples/README.md`：真实公开示例索引。
+- `examples/real-world-text-anthropic-building-effective-agents.md`：Anthropic Engineering 文本文章示例。
+- `examples/real-world-video-matt-pocock-ai-coding-workflow.md`：公开 YouTube workshop 视频 transcript 示例。
+- `examples/real-world-audio-npr-planet-money-ai-podcast.md`：NPR Planet Money 音频/播客 transcript 示例。
 
 ## 核心原则
 
@@ -104,6 +104,16 @@ hermes -s source-faithful-summary-skill
 然后再写最终总结。
 
 如果产物是可发布/可阅读文章，使用**面向读者的文章模式**：source map 和审计材料放到附录或评估报告里，正文开头应是贴合原材料的标题、source type、一句话概括、编号叙事段落、可复制工作流清单、不要误读、timestamp source notes 和最终结论。如果旧稿更好读、新稿事实更全，应以旧稿为叙事主轴，选择性吸收新事实，而不是机械追加“完整性补丁”。
+
+## 真实公开示例
+
+`examples/` 目录现在放的是完整真实输出，不再是 tiny toy fixtures：
+
+- 文本文章：Anthropic《Building effective agents》。
+- 视频 transcript：Matt Pocock《Workflow for AI Coding》。
+- 音频 / 播客 transcript：NPR Planet Money《Our first podcast episode made by AI》。
+
+每个示例都包含公开原始来源链接和已发布 demo 链接，方便读者对照原材料判断输出质量。
 
 ## 最小提示词
 

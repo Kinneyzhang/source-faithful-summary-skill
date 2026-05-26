@@ -41,10 +41,10 @@ Source language and output language are separate. Priority: explicit user reques
 - `templates/summary-outline.md` — reusable outline for source-faithful summaries.
 - `templates/evaluation-rubric.md` — scoring rubric for multi-scenario evaluation.
 - `templates/long-source-plan.md` — worksheet for long transcripts, podcasts, panels, and long articles.
-- `examples/workflow-talk-mini.md` — small workflow/video-style example.
-- `examples/text-article-mini.md` — text article example.
-- `examples/audio-podcast-mini.md` — multi-speaker audio/podcast transcript example.
-- `examples/meeting-mini.md` — meeting transcript example.
+- `examples/README.md` — index of real-world public examples.
+- `examples/real-world-text-anthropic-building-effective-agents.md` — text article example from Anthropic Engineering.
+- `examples/real-world-video-matt-pocock-ai-coding-workflow.md` — video transcript example from a public YouTube workshop.
+- `examples/real-world-audio-npr-planet-money-ai-podcast.md` — audio/podcast transcript example from NPR Planet Money.
 
 ## Core idea
 
@@ -104,6 +104,16 @@ Before writing prose, make the agent produce these intermediate artifacts:
 Only then write the final summary.
 
 For publishable summaries, use **Reader-facing article mode**: keep source maps and audit artifacts as appendices, and start the final output with a source-specific title, source type, one-sentence faithful summary, numbered narrative sections, a workflow checklist, do-not-misread notes, timestamp source notes, and a final conclusion. If an older draft reads better but a newer run covers more facts, use the older draft as the narrative spine and integrate the new facts selectively instead of appending completeness patches.
+
+## Real-world examples
+
+The `examples/` directory contains full public outputs, not tiny toy fixtures:
+
+- Text article: Anthropic, *Building effective agents*.
+- Video transcript: Matt Pocock, *Workflow for AI Coding*.
+- Audio / podcast transcript: NPR Planet Money, *Our first podcast episode made by AI*.
+
+Each example includes the public original source URL and a published demo URL so readers can compare the output against the source.
 
 ## Minimal prompt
 
