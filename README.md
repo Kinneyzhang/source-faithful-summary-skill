@@ -98,7 +98,7 @@ Before writing prose, make the agent produce these intermediate artifacts:
 
 Only then write the final summary.
 
-For publishable summaries, use **Reader-facing article mode**: keep source maps and audit artifacts as appendices, and start the final output with a source-specific title, source type, one-sentence faithful summary, numbered narrative sections, a workflow checklist, do-not-misread notes, timestamp source notes, and a final conclusion.
+For publishable summaries, use **Reader-facing article mode**: keep source maps and audit artifacts as appendices, and start the final output with a source-specific title, source type, one-sentence faithful summary, numbered narrative sections, a workflow checklist, do-not-misread notes, timestamp source notes, and a final conclusion. If an older draft reads better but a newer run covers more facts, use the older draft as the narrative spine and integrate the new facts selectively instead of appending completeness patches.
 
 ## Minimal prompt
 

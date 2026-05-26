@@ -98,3 +98,35 @@ Weak section headings:
 ## Rule
 
 Working artifacts such as source maps, long-source plans, and scoring rubrics belong in an appendix/evaluation report unless the user asks to inspect the process. They should not block the reader from the actual article.
+
+
+## Revision / merge mode
+
+Use when improving an existing good reader-facing article with additional facts from a newer run.
+
+1. Identify the older article's strongest assets: title, opening spine, section rhythm, final conclusion.
+2. Identify new facts from the newer run: missing concepts, late-source details, caveats, examples.
+3. For each new fact, choose one placement:
+   - new section;
+   - merged paragraph in an existing section;
+   - renamed existing heading;
+   - checklist item;
+   - source note only.
+4. Do not append new facts mechanically. Preserve narrative rhythm.
+5. If version A reads better and version B is more complete, use A as the narrative spine and absorb B's facts selectively.
+
+## Strong workflow article pattern
+
+For practical/workflow sources, a strong reader-facing article usually follows:
+
+```text
+Source type + spine + one-sentence summary
+→ constraints / failure modes
+→ first concrete action
+→ external artifact/process
+→ feedback/review loop
+→ architecture/boundary
+→ scaling/parallelization
+→ decision model/checklist/do-not-misread/source notes
+→ final conclusion
+```

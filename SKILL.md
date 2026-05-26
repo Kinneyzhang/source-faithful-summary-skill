@@ -386,6 +386,45 @@ If the source map and audit blocks were removed, would the article still read as
 Would a reader know why each workflow step exists, not just that it exists?
 ```
 
+#### Reader-facing article craft rules
+
+For a reader-facing article, optimize the final draft as an article, not as a complete inventory. Preserve source fidelity, but shape the reading path.
+
+Use this article rhythm for practical/workflow sources:
+
+```text
+source type + spine + one-sentence summary
+→ constraints / failure modes
+→ first concrete action
+→ external artifact or process
+→ feedback / review loop
+→ architecture or boundary if central
+→ scale/parallelization if central
+→ decision model / checklist / do-not-misread / source notes
+→ final conclusion
+```
+
+Heading rules:
+
+- A good heading names a source-specific constraint, action, artifact, or judgment.
+- Avoid generic headings such as “The problem”, “The workflow”, “Key takeaways”, or “Main ideas” when the source contains concrete named steps.
+- Prefer headings like “Constraint: smart zone / dumb zone”, “Action: use Grill Me to turn vague requests into shared understanding”, or “Review: use fresh context instead of self-reviewing in the dumb zone”.
+
+When improving an existing reader-facing article:
+
+- Do not mechanically append missing points as new sections.
+- First decide whether each missing point should become a new section, merge into an existing section, rename an existing heading, or only appear in source notes.
+- Preserve article rhythm over exhaustive section count.
+- If new information is important but breaks flow, integrate it through a transition sentence that explains how it serves the source's control model.
+- Keep the original article's strongest title, opening spine, and final conclusion unless they are wrong.
+
+Old-good / new-complete merge rule:
+
+```text
+If version A reads better and version B covers more facts, do not replace A with B.
+Use A as the narrative spine; absorb B's missing facts only where they strengthen that spine.
+```
+
 ### Step 8 — Write the summary
 
 Writing constraints:
@@ -586,6 +625,10 @@ This is a <practical/workflow / viewpoint / tutorial / interview / podcast> sour
 
 10. **Dumping working artifacts before the article.** Source maps and long-source plans are useful, but if they appear before the narrative in a reader-facing article, the output feels like an evaluation log rather than a good summary. Choose delivery mode before drafting.
 
+11. **Mechanical completeness patches.** When a later run discovers missing details, do not bolt them onto the article as isolated new sections. Decide whether they belong as a new section, a renamed heading, a paragraph inside an existing section, a checklist item, or a source note. A complete but patchy article is worse than a slightly shorter article with a strong spine.
+
+12. **Generic titles that flatten the source.** “Fundamentals still matter” may be true, but if the source demonstrates a control workflow, title the article around that workflow.
+
 ## Verification Checklist
 
 Before finalizing:
@@ -609,4 +652,6 @@ Before finalizing:
 - [ ] Speaker/participant audit passed when applicable.
 - [ ] Reverse summary matches source main thread.
 - [ ] Reader-facing article has a source-specific title, one-sentence faithful summary, numbered narrative sections, and a final conclusion.
+- [ ] Reader-facing article headings name source-specific constraints/actions/artifacts, not generic categories.
+- [ ] If revising from an earlier good article, missing facts were integrated into the narrative spine rather than appended mechanically.
 - [ ] If published, the final page or file was fetched back and checked.
