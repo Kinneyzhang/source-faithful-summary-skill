@@ -352,6 +352,40 @@ For technical guidance articles:
 ## Source quality notes
 ```
 
+
+### Step 7.5 — Choose delivery mode: working artifact vs reader-facing article
+
+Do not confuse intermediate evidence artifacts with the final reading experience. Source maps, long-source plans, named-concept tables, and decision-model maps are thinking tools. They may be included in an appendix or evaluation report, but they should not automatically become the opening of a public-facing summary article.
+
+Before drafting, choose one delivery mode:
+
+```text
+Mode A — Working artifact / audit report
+Use when the user needs to inspect evidence, scoring, or methodology.
+Order: metadata → source-quality note → source map → named concepts → decision model → summary → audit.
+
+Mode B — Reader-facing source-faithful article
+Use when the user asks for an article, publishable summary, or readable note.
+Order: title → source line → source type + one-sentence faithful summary → numbered narrative sections → decision model/checklist → source notes appendix.
+```
+
+For reader-facing articles:
+
+- The title should name the source and the actual workflow/problem, not a generic lesson.
+- Start with the source's main spine in 1–2 sentences.
+- Use numbered sections whose headings are source-specific actions or constraints.
+- Put timestamps inside sections or in a final source-notes appendix; do not force readers through raw source maps first.
+- For practical/workflow sources, include a **copyable workflow checklist** near the end.
+- Include a **do-not-misread** section when the source is easily mistaken for a generic thesis, tool demo, or hype piece.
+- End with a compact final conclusion that restates the speaker/author's control model.
+
+Quality test for Mode B:
+
+```text
+If the source map and audit blocks were removed, would the article still read as a coherent, useful summary?
+Would a reader know why each workflow step exists, not just that it exists?
+```
+
 ### Step 8 — Write the summary
 
 Writing constraints:
@@ -467,25 +501,50 @@ Easy-to-miss details:
 - <detail>
 ```
 
-### Public article
+### Reader-facing public article
 
 ```markdown
-# <Speaker/topic>: <actual workflow or problem>
+# <Source / speaker>: <how the source turns the problem into a controllable workflow>
 
-Source:
-- <URL or source name>
-- Transcript: <language/count/duration, if available>
+来源：<URL / source id>
+Transcript：<language, duration, segment count, quality note>
 
-## One-sentence faithful summary
+## Source type
 
-<Do not over-abstract.>
+This is a <practical/workflow / viewpoint / tutorial / interview / podcast> source.
 
-## 1. <First source segment / problem>
-## 2. <Speaker's first concrete move>
-## 3. <Next failure mode or workflow step>
-## 4. <Practical checklist>
+主轴：<constraint/failure → action/process → feedback/review → limit>.
+
+一句话忠实总结：
+
+> <Specific summary that names the actual workflow/problem; avoid generic lessons.>
+
+## 1. <Opening constraint or failure mode>
+## 2. <First concrete action/process introduced by the source>
+## 3. <Next artifact/tool/process and why it exists>
+## 4. <Feedback/review/control loop>
+## 5. <Architecture / boundary / caveat if central>
+## 6. <Parallelization / scaling / final workflow if central>
+
 ## Decision model map
-## Timestamped facts
+
+<Constraint → failure → judgment → action → evidence.>
+
+## 可复制的工作流清单
+
+<Only include steps the source supports.>
+
+## 不要误读这份材料
+
+<List common wrong readings and the more accurate reading.>
+
+## Timestamp source notes
+
+- <timestamp/section>: <source fact>
+
+## 最终结论
+
+<Compact conclusion.>
 ```
 
 ### Audit report
@@ -525,6 +584,8 @@ Source:
 
 9. **Responding to critique with paragraph patches.** Critique from a knowledgeable reader, viewer, or listener often means the summary method missed the source's decision model. Audit the method before patching prose.
 
+10. **Dumping working artifacts before the article.** Source maps and long-source plans are useful, but if they appear before the narrative in a reader-facing article, the output feels like an evaluation log rather than a good summary. Choose delivery mode before drafting.
+
 ## Verification Checklist
 
 Before finalizing:
@@ -533,6 +594,8 @@ Before finalizing:
 - [ ] Source-quality limitations checked: missing figures/tables/code/links, subtitle/STT quality, preview vs full source.
 - [ ] Source type classified.
 - [ ] Source map exists.
+- [ ] Delivery mode chosen: working artifact/audit report OR reader-facing article.
+- [ ] For reader-facing articles, source map/long-source plan are not placed before the narrative unless explicitly requested.
 - [ ] Long-source plan exists when source exceeds ~50k chars / 60 minutes / 20 source-map nodes.
 - [ ] Named concepts are listed and role-classified.
 - [ ] Main thread is stated in one sentence.
@@ -545,4 +608,5 @@ Before finalizing:
 - [ ] Long-source coverage audit passed when applicable.
 - [ ] Speaker/participant audit passed when applicable.
 - [ ] Reverse summary matches source main thread.
+- [ ] Reader-facing article has a source-specific title, one-sentence faithful summary, numbered narrative sections, and a final conclusion.
 - [ ] If published, the final page or file was fetched back and checked.

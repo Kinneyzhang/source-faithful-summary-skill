@@ -49,3 +49,52 @@
 ## 9. Source notes
 
 - <timestamp or section>: <fact>
+
+
+---
+
+# Reader-Facing Article Mode
+
+Use this when the output should be a publishable/readable summary, not an audit artifact.
+
+## Title
+
+`# <Source / speaker>: <actual workflow/problem the source explains>`
+
+The title should be source-specific. Avoid generic titles like “why fundamentals matter” when the source actually demonstrates a workflow.
+
+## Opening block
+
+- Source:
+- Transcript/source quality:
+- Source type:
+- Main spine:
+- One-sentence faithful summary:
+
+## Numbered body
+
+Use 8–14 source-specific sections for long workflow material. Each heading should name one constraint, artifact, action, feedback loop, or caveat from the source.
+
+Good section headings:
+
+- `约束一：smart zone / dumb zone —— 任务必须切到模型能聪明处理的范围内`
+- `第一段动作：用 Grill Me 把模糊需求变成共享理解`
+- `Review 要用 fresh context：不要让 dumb zone 里的 agent 自审`
+
+Weak section headings:
+
+- `The problem`
+- `The workflow`
+- `Key takeaways`
+
+## End matter
+
+- Decision model map
+- Copyable workflow checklist
+- Do-not-misread section
+- Timestamp source notes
+- Final conclusion
+
+## Rule
+
+Working artifacts such as source maps, long-source plans, and scoring rubrics belong in an appendix/evaluation report unless the user asks to inspect the process. They should not block the reader from the actual article.

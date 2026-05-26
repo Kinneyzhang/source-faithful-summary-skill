@@ -98,6 +98,8 @@ hermes -s source-faithful-summary-skill
 
 然后再写最终总结。
 
+如果产物是可发布/可阅读文章，使用**面向读者的文章模式**：source map 和审计材料放到附录或评估报告里，正文开头应是贴合原材料的标题、source type、一句话忠实总结、编号叙事段落、可复制工作流清单、不要误读、timestamp source notes 和最终结论。
+
 ## 最小提示词
 
 ```text
