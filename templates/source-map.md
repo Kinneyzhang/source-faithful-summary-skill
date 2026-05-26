@@ -5,7 +5,8 @@
 - Title:
 - URL / file:
 - Type: text / technical article / video transcript / audio transcript / podcast / interview / lecture / demo / meeting / panel
-- Language:
+- Source language:
+- Output language:
 - Duration / length / section count / speaker count:
 - Transcript/source quality notes: headings preserved? figures/tables/code/links lost? subtitle/STT quality?
 

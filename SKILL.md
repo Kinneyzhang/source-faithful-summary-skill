@@ -94,6 +94,33 @@ Prefer one or more of:
 
 If the transcript is unavailable, state the limitation explicitly and summarize only from available material.
 
+
+## Output Language Policy
+
+Source language and output language are separate decisions. Do not assume the output language should match the source language.
+
+Use this priority order:
+
+1. **Explicit user request wins.** If the user says “write in Chinese”, “English output”, “用中文”, “生成英文版”, or names a target locale, use that language.
+2. **Conversation language next.** If the user does not specify, write in the language the user used to ask for the summary. A Chinese request gets Chinese output; an English request gets English output.
+3. **Existing artifact language next.** If revising an existing article or note, preserve its language unless the user asks to change it.
+4. **Source language last.** Only mirror the source language when none of the above is available.
+
+For multilingual or international users, ask only when the language signal is genuinely ambiguous. Otherwise choose and state the choice in metadata, for example:
+
+```markdown
+Output language: Chinese, chosen from the user request language.
+```
+
+Keep source-specific names, tool names, commands, repository names, product names, and technical terms in their original form unless the user explicitly requests translation.
+
+Before finalizing, run a language audit:
+
+- Is the main body in the chosen output language?
+- Are only proper nouns / commands / quoted source phrases left untranslated?
+- If the source is English but the user asked in Chinese, did we avoid translationese while preserving exact technical terms?
+- If the user asked in English, did we avoid accidentally producing Chinese headings or commentary?
+
 ## Standard Workflow
 
 ### Step 1 — Fetch and validate source material

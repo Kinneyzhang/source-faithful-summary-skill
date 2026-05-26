@@ -26,6 +26,11 @@ This package gives agents a repeatable method for source-grounded summarization.
 
 This package does not do speech-to-text by itself. Use your own transcript tool first, then apply this skill.
 
+
+## Output language
+
+Source language and output language are separate. Priority: explicit user request → conversation language → existing artifact language → source language. A Chinese user request produces Chinese output even for English sources; an English request produces English output unless otherwise specified.
+
 ## What it includes
 
 - `SKILL.md` — canonical Hermes skill and full workflow.
