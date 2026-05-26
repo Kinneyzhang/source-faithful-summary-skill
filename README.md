@@ -14,7 +14,7 @@ Long-form summaries often fail in subtle ways:
 - they mention concepts but miss why those concepts control later actions;
 - they compress examples into slogans;
 - they add implications before preserving what the source actually said;
-- they pass factual checks but fail the “would a knowledgeable viewer/reader recognize this?” test.
+- they pass factual checks but fail the “would a knowledgeable reader/viewer/listener recognize this?” test.
 
 This package gives agents a repeatable method for source-grounded summarization.
 
@@ -34,7 +34,11 @@ This package does not do speech-to-text by itself. Use your own transcript tool 
 - `.cursor/rules/source-faithful-summary.mdc` — Cursor/Windsurf-style editor rule.
 - `templates/source-map.md` — worksheet for source maps and decision-model extraction.
 - `templates/summary-outline.md` — reusable outline for source-faithful summaries.
-- `examples/workflow-talk-mini.md` — small illustrative example.
+- `templates/evaluation-rubric.md` — scoring rubric for multi-scenario evaluation.
+- `examples/workflow-talk-mini.md` — small workflow/video-style example.
+- `examples/text-article-mini.md` — text article example.
+- `examples/audio-podcast-mini.md` — multi-speaker audio/podcast transcript example.
+- `examples/meeting-mini.md` — meeting transcript example.
 
 ## Core idea
 
@@ -126,7 +130,7 @@ Do not use this as the primary workflow for:
 ## Limitations
 
 - The skill does not fetch transcripts or run STT by itself.
-- Poor or auto-generated subtitles can distort details; mark that limitation when present.
+- Poor OCR, extraction, subtitles, or speech-to-text can distort details; mark that limitation when present.
 - It prioritizes source fidelity over elegance. If you want analysis or implications, add them as a clearly separated second stage.
 
 ## License

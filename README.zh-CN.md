@@ -34,7 +34,11 @@
 - `.cursor/rules/source-faithful-summary.mdc`：Cursor/Windsurf 规则。
 - `templates/source-map.md`：source map 和 decision model worksheet。
 - `templates/summary-outline.md`：忠实总结大纲模板。
-- `examples/workflow-talk-mini.md`：小型示例。
+- `templates/evaluation-rubric.md`：多场景评估评分标准。
+- `examples/workflow-talk-mini.md`：工作流/视频风格小型示例。
+- `examples/text-article-mini.md`：文本文章示例。
+- `examples/audio-podcast-mini.md`：多说话人音频/播客 transcript 示例。
+- `examples/meeting-mini.md`：会议 transcript 示例。
 
 ## 核心原则
 

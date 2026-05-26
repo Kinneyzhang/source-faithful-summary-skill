@@ -2,9 +2,12 @@
 
 source:
   # text | video_transcript | audio_transcript | interview | lecture | meeting | demo
-  type: video_transcript
+  type: text
   language: en
+  # timestamp | section | paragraph | page | mixed
+  reference_style: mixed
   preserve_timestamps: true
+  note_source_quality: true
 
 summary:
   output_language: en

@@ -14,7 +14,7 @@ metadata:
 
 ## Overview
 
-Use this skill for source-grounded summaries of videos, podcasts, talks, interviews, demos, workshops, lectures, and transcript-like source material.
+Use this skill for source-grounded summaries of text, video transcripts, audio transcripts, podcasts, talks, interviews, demos, workshops, lectures, meetings, and other transcript-like source material.
 
 The goal is not to write the most elegant essay. The goal is to preserve what the source actually does: the speaker's main thread, attention weight, concrete examples, sequence, failure modes, actions, and decision model.
 
@@ -32,7 +32,7 @@ Speaker's decision model > isolated tips
 
 ## What This Skill Optimizes
 
-A good source-grounded video summary is not merely a compressed transcript. It should recreate the understanding a careful viewer would get after watching the source.
+A good source-grounded summary is not merely compressed source text. It should recreate the understanding a careful reader, viewer, or listener would get after engaging with the source.
 
 Optimize for five kinds of fidelity:
 
@@ -42,7 +42,7 @@ Optimize for five kinds of fidelity:
 4. **Action fidelity** — what the speaker actually does, in usable sequence.
 5. **Decision-model fidelity** — the constraints, tradeoffs, and failure modes behind the speaker's workflow.
 
-For workflow/practice videos, named concepts must not be treated as decorative keywords. A concept is important if it controls later decisions.
+For workflow/practice sources, named concepts must not be treated as decorative keywords. A concept is important if it controls later decisions.
 
 Example:
 
@@ -74,8 +74,8 @@ Also use when the source is not literally video but has a strong original sequen
 
 Do **not** use this as the primary workflow when the user explicitly wants:
 
-- a free-form opinion essay inspired by a video;
-- a broad research article that uses the video as one source among many;
+- a free-form opinion essay inspired by a source;
+- a broad research article that uses the material as one source among many;
 - creative rewriting that intentionally departs from the source;
 - marketing copy where source fidelity is not required.
 
@@ -235,7 +235,7 @@ For practical/workflow videos:
 ## 2. The first failure mode they observed
 ## 3. The constraint or mental model behind the fix
 ## 4. The workflow/tool/process they introduced
-## 5. The concrete checklist viewers can copy
+## 5. The concrete checklist readers/viewers/listeners can copy
 ## 6. Limits, warnings, and where judgment remains necessary
 ## Source notes / timestamped facts
 ```
@@ -426,7 +426,7 @@ Source:
 
 8. **No timestamp trail.** Key claims should be traceable to source ranges, even if the final prose does not cite every line.
 
-9. **Responding to critique with paragraph patches.** Critique from a knowledgeable viewer often means the summary method missed the source's decision model. Audit the method before patching prose.
+9. **Responding to critique with paragraph patches.** Critique from a knowledgeable reader, viewer, or listener often means the summary method missed the source's decision model. Audit the method before patching prose.
 
 ## Verification Checklist
 

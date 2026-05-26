@@ -43,7 +43,7 @@ failure mode → underlying constraint → speaker/author judgment → concrete 
 - Preserve concrete examples and named concepts that control later decisions.
 - Mark external analysis separately from source summary.
 - If transcript/source quality is limited, say so explicitly.
-- If the user provides critique from a knowledgeable viewer/reader, audit the method; do not merely patch one paragraph.
+- If the user provides critique from a knowledgeable reader/viewer/listener, audit the method; do not merely patch one paragraph.
 
 ## Files
 
