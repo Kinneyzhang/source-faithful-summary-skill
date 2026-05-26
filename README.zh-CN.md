@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-一个面向 Agent 的原始材料忠实总结技能，适用于文本、视频 transcript、音频 transcript、播客、访谈、讲座、demo、workshop 和会议记录。
+一个面向 Agent 的原始材料贴近型总结技能，适用于文本、视频 transcript、音频 transcript、播客、访谈、讲座、demo、workshop 和会议记录。
 
 很多 AI 总结会优化“好读”和“高级概括”，最后产出一篇漂亮文章，但读者已经看不到原材料真正花时间讲了什么。这个 skill 优先保护原材料的主线、注意力权重、具体例子、动作链、失败模式、证据和讲者/作者的决策模型。
 
@@ -13,7 +13,7 @@
 - 用总结者自己的漂亮框架替换原材料的真实推进；
 - 提到了概念，但没解释这些概念为什么支配后续动作；
 - 把例子压缩成口号；
-- 还没忠实复原原材料，就先加入自己的启发和引申；
+- 还没贴近原材料，就先加入自己的启发和引申；
 - 事实上没明显错误，但熟悉原材料的人会觉得“这不是它真正讲的东西”。
 
 这个包给 Agent 一套可重复执行的 source-grounded summary 方法。
@@ -38,7 +38,7 @@
 - `CLAUDE.md`：Claude Code 适配说明。
 - `.cursor/rules/source-faithful-summary.mdc`：Cursor/Windsurf 规则。
 - `templates/source-map.md`：source map 和 decision model worksheet。
-- `templates/summary-outline.md`：忠实总结大纲模板。
+- `templates/summary-outline.md`：贴近原文的总结大纲模板。
 - `templates/evaluation-rubric.md`：多场景评估评分标准。
 - `templates/long-source-plan.md`：长 transcript、长播客、panel 和长文章的处理计划模板。
 - `examples/workflow-talk-mini.md`：工作流/视频风格小型示例。
@@ -49,7 +49,7 @@
 ## 核心原则
 
 ```text
-忠实于原材料 > 文章优雅
+贴近原材料 > 文章优雅
 叙事权重 > 概念密度
 具体动作/问题链 > 抽象框架
 证据 > 感觉
@@ -103,7 +103,7 @@ hermes -s source-faithful-summary-skill
 
 然后再写最终总结。
 
-如果产物是可发布/可阅读文章，使用**面向读者的文章模式**：source map 和审计材料放到附录或评估报告里，正文开头应是贴合原材料的标题、source type、一句话忠实总结、编号叙事段落、可复制工作流清单、不要误读、timestamp source notes 和最终结论。如果旧稿更好读、新稿事实更全，应以旧稿为叙事主轴，选择性吸收新事实，而不是机械追加“完整性补丁”。
+如果产物是可发布/可阅读文章，使用**面向读者的文章模式**：source map 和审计材料放到附录或评估报告里，正文开头应是贴合原材料的标题、source type、一句话概括、编号叙事段落、可复制工作流清单、不要误读、timestamp source notes 和最终结论。如果旧稿更好读、新稿事实更全，应以旧稿为叙事主轴，选择性吸收新事实，而不是机械追加“完整性补丁”。
 
 ## 最小提示词
 
@@ -116,11 +116,11 @@ Do not turn the source into a polished concept essay.
 
 ## 适合场景
 
-- 对文章、报告、访谈稿、transcript 做忠实总结；
+- 对文章、报告、访谈稿、transcript 做贴近原文的总结；
 - YouTube/Bilibili/Vimeo 视频 transcript 总结；
 - 播客和音频访谈转写后的总结；
 - 技术 demo、workshop、课程、会议演讲；
-- 需要公开发布且必须忠实代表单一来源的文章；
+- 需要公开发布且必须准确代表单一来源的文章；
 - 审计已有总结是否偏离原材料。
 
 ## 不适合场景
@@ -132,7 +132,7 @@ Do not turn the source into a polished concept essay.
 - 不要求 source fidelity 的普通摘要；
 - 一上来就综合很多来源的研究文章。
 
-如果要写分析和启发，先完成忠实总结，再单独加“分析/启发/我的看法”一节。
+如果要写分析和启发，先完成基于原文的总结，再单独加“分析/启发/我的看法”一节。
 
 ## 长材料支持
 
@@ -142,7 +142,7 @@ Do not turn the source into a polished concept essay.
 
 - 本 skill 不负责抓取 transcript 或 STT。
 - 自动字幕质量差时，需要明确标注限制。
-- 它优先保证忠实，不优先追求文章最漂亮；如果要观点文章，应该作为第二阶段。
+- 它优先保证贴近原材料，不优先追求文章最漂亮；如果要观点文章，应该作为第二阶段。
 
 ## License
 

@@ -120,6 +120,7 @@ Before finalizing, run a language audit:
 - Are only proper nouns / commands / quoted source phrases left untranslated?
 - If the source is English but the user asked in Chinese, did we avoid translationese while preserving exact technical terms?
 - If the user asked in English, did we avoid accidentally producing Chinese headings or commentary?
+- For Chinese reader-facing articles, avoid the word “忠实” in the article title, headings, metadata labels, and body prose. The method can be source-faithful, but Chinese readers usually find literal labels like “一句话忠实总结” awkward. Prefer natural labels such as “一句话概括”, “主轴”, “基于原文的总结”, or simply omit the methodology label.
 
 ## Standard Workflow
 
@@ -581,7 +582,7 @@ This is a <practical/workflow / viewpoint / tutorial / interview / podcast> sour
 
 主轴：<constraint/failure → action/process → feedback/review → limit>.
 
-一句话忠实总结：
+一句话概括：
 
 > <Specific summary that names the actual workflow/problem; avoid generic lessons.>
 
