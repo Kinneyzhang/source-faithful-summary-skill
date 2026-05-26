@@ -114,6 +114,11 @@ Then write a summary that preserves the source's main thread and attention weigh
 Do not turn the source into a polished concept essay.
 ```
 
+
+## 评分优化但不膨胀
+
+如果评估没有满分，先区分三类原因：可修漏项、素材质量上限、读者体验取舍。不要为了追 `30/30` 把所有细节硬塞进正文；只补那些有原文支撑、且能让文章更好的信息。
+
 ## 适合场景
 
 - 对文章、报告、访谈稿、transcript 做贴近原文的总结；

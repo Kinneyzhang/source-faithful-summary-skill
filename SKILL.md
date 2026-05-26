@@ -543,6 +543,25 @@ Which constraint or failure mode makes this action necessary?
 Would a reader be able to copy the speaker's judgment, not just the surface step?
 ```
 
+#### G. Near-perfect revision without quality regression
+
+Use this only after the summary already passes the main-thread and reader-facing audits. The goal is not to inflate the article to chase a perfect score; it is to fix small, source-supported omissions without damaging the reading experience.
+
+Classify every non-perfect score as one of three types:
+
+1. **Fixable omission.** A source-supported detail is missing and can be added in one sentence, one source note, or one compact appendix entry. Fix it.
+2. **Source-quality ceiling.** The source lacks timestamps, images, figures, audio cues, or full context. State the limitation; do not invent detail. This may cap the score below perfect.
+3. **Reader-experience tradeoff.** Adding every detail would make the article worse. Prefer a compact “details worth noting” paragraph or source note over expanding the main narrative. If even that hurts the article, keep the lower score and explain why.
+
+Before raising a score to perfect, check:
+
+- Did the revision add source-supported information only?
+- Did it avoid length bloat, checklist dumping, and duplicate explanation?
+- Did it preserve the article's strongest spine and headings?
+- Would a knowledgeable reader prefer the revised version, not just the scoring sheet?
+
+If the answer is no, keep the lower score. A clean 28/30 can be better than a bloated 30/30.
+
 Challenge prompts:
 
 - Which speaker-coined or repeatedly used term is absent?

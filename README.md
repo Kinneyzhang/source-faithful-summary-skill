@@ -114,6 +114,10 @@ Then write a summary that preserves the source's main thread and attention weigh
 Do not turn the source into a polished concept essay.
 ```
 
+## Score optimization without bloat
+
+When an evaluation is below perfect, distinguish fixable omissions from source-quality ceilings and reader-experience tradeoffs. Do not chase `30/30` by dumping every detail into the article; add only source-supported details that improve the reader-facing output.
+
 ## Good fit
 
 Use this for:
